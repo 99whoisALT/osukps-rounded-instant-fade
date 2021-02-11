@@ -42,7 +42,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>d:\Apps and Files\Apps\osukps</OutputPath>
     <DefineConstants>
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -132,6 +132,7 @@
     <Compile Include="KpsHandler.cs" />
     <Compile Include="NoKeyHandler.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="RoundedRectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>

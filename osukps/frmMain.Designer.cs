@@ -93,14 +93,14 @@
 			// lblTotal
 			// 
 			this.lblTotal.AutoSize = true;
-			this.lblTotal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTotal.ForeColor = System.Drawing.Color.White;
+			this.lblTotal.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTotal.ForeColor = System.Drawing.Color.Gray;
 			this.lblTotal.Location = new System.Drawing.Point(0, 18);
-			this.lblTotal.MinimumSize = new System.Drawing.Size(0, 18);
+			this.lblTotal.MinimumSize = new System.Drawing.Size(0, 14);
 			this.lblTotal.Name = "lblTotal";
-			this.lblTotal.Size = new System.Drawing.Size(16, 18);
+			this.lblTotal.Size = new System.Drawing.Size(14, 14);
 			this.lblTotal.TabIndex = 1;
-			this.lblTotal.Text = "0";
+			this.lblTotal.Text = "30";
 			this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// lblKps
@@ -383,7 +383,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.BackColor = System.Drawing.Color.Magenta;
+			this.TransparencyKey = this.BackColor = System.Drawing.Color.Black;
 			this.ClientSize = new System.Drawing.Size(139, 36);
 			this.ContextMenuStrip = this.cms;
 			this.Controls.Add(this.pnlInfo);
@@ -393,7 +393,7 @@
 			this.MinimumSize = new System.Drawing.Size(0, 36);
 			this.Name = "frmMain";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "osukps";
 			this.TopMost = true;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);

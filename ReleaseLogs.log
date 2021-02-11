@@ -1,0 +1,24 @@
+Build started 2021/02/11 16:00:49.
+__________________________________________________
+Project "D:\projects\c#\osukps\osukps.sln" (default targets):
+
+Target ValidateSolutionConfiguration:
+    Building solution configuration "Release|Any CPU".
+Target Build:
+    __________________________________________________
+    Project "D:\projects\c#\osukps\osukps.sln" is building "D:\projects\c#\osukps\osukps\osukps.csproj" (default targets):
+
+    Target CoreResGen:
+        No resources are out of date with respect to their source files. Skipping resource generation.
+    Target GenerateTargetFrameworkMonikerAttribute:
+      Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+    Target CoreCompile:
+      Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+    Target CopyFilesToOutputDirectory:
+        osukps -> d:\Apps and Files\Apps\osukps\osukps.exe
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.67

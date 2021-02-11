@@ -29,7 +29,7 @@ namespace osukps {
 			return instance.KeyCode;
 		}
 
-		public static void UpdateLabel(Label lbl) {
+		public static void UpdateLabel(KpsButton lbl) {
 			if (!instance.Cancelled) {
 				if (instance.chkShowLabel.Checked) {
 					lbl.Text = instance.txtKey.Text;

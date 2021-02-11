@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Globalization;
@@ -46,7 +45,7 @@ namespace osukps {
 			kpscolorscount = 2;
 
 			FontHandler.labels.Add(lblKps);
-			FontHandler.labels.Add(lblTotal);
+			//FontHandler.labels.Add(lblTotal);
 
 			tmrProcess.Interval = 1;
 
@@ -290,8 +289,8 @@ namespace osukps {
 				}
 				GetPrivateProfileString(section = "Colors", key = "bg", "-16777216", temp, 32, settingsFile);
 				if (int.TryParse(temp.ToString(), out tmpi)) {
-					BackColor = Color.FromArgb(tmpi);
-					pnlInfo.BackColor = BackColor;
+					//BackColor = Color.FromArgb(tmpi);
+					//pnlInfo.BackColor = BackColor;
 				}
 
 				for (var i = 0; i < MAX_BUTTONS; i++) {
@@ -566,7 +565,7 @@ namespace osukps {
 			for (int i = 0; i < MAX_BUTTONS; i++) {
 				btns[i].OnForeColorChange();
 			}
-			lblTotal.ForeColor = frmMain.FgColor;
+			//lblTotal.ForeColor = frmMain.FgColor;
 			pnlInfo.BackColor = BackColor;
 			pnlKeys.BackColor = BackColor;
 		}
