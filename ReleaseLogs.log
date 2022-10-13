@@ -1,4 +1,4 @@
-Build started 2021/02/11 16:00:49.
+Build started 2022/10/13 ?? 4:03:19.
 __________________________________________________
 Project "D:\projects\c#\osukps\osukps.sln" (default targets):
 
@@ -9,16 +9,27 @@ Target Build:
     Project "D:\projects\c#\osukps\osukps.sln" is building "D:\projects\c#\osukps\osukps\osukps.csproj" (default targets):
 
     Target CoreResGen:
-        No resources are out of date with respect to their source files. Skipping resource generation.
-    Target GenerateTargetFrameworkMonikerAttribute:
-      Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+        Could not read state file "obj\Release\osukps.csproj.GenerateResource.cache". The format of this state file is not valid.
+        Processing resource file "frmAbout.resx" into "obj\Release\osukps.frmAbout.resources".
+        Processing resource file "frmColorPicker.resx" into "obj\Release\osukps.frmColorPicker.resources".
+        Processing resource file "frmGetKey.resx" into "obj\Release\osukps.frmGetKey.resources".
+        Processing resource file "frmKps.resx" into "obj\Release\osukps.frmKps.resources".
+        Processing resource file "frmMain.resx" into "obj\Release\osukps.frmMain.resources".
+        Processing resource file "frmPrompt.resx" into "obj\Release\osukps.frmPrompt.resources".
+        Processing resource file "frmSetting.resx" into "obj\Release\osukps.frmSetting.resources".
+        Processing resource file "KpsColorControl.resx" into "obj\Release\osukps.KpsColorControl.resources".
+        Processing resource file "Properties\Resources.resx" into "obj\Release\osukps.Properties.Resources.resources".
     Target CoreCompile:
-      Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+        C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /fullpaths /nostdlib+ /platform:AnyCPU /errorreport:prompt /warn:4 /highentropyva- /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Deployment.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /debug- /filealign:512 /nowin32manifest /optimize+ /out:obj\Release\osukps.exe /resource:obj\Release\osukps.frmAbout.resources /resource:obj\Release\osukps.frmColorPicker.resources /resource:obj\Release\osukps.frmGetKey.resources /resource:obj\Release\osukps.frmKps.resources /resource:obj\Release\osukps.frmMain.resources /resource:obj\Release\osukps.frmPrompt.resources /resource:obj\Release\osukps.frmSetting.resources /resource:obj\Release\osukps.KpsColorControl.resources /resource:obj\Release\osukps.Properties.Resources.resources /target:winexe /utf8output /langversion:7.3 DefKeyHandler.cs DialogPositioner.cs FontHandler.cs frmAbout.cs frmAbout.Designer.cs frmColorPicker.cs frmColorPicker.Designer.cs frmGetKey.cs frmGetKey.Designer.cs frmKps.cs frmKps.Designer.cs frmMain.cs frmMain.Designer.cs frmMain.Recording.cs frmPrompt.cs frmPrompt.Designer.cs frmSetting.cs frmSetting.Designer.cs IKeyHandler.cs KpsButton.cs KpsButtonColor.cs KPSCOLOR.cs KpsColorControl.cs KpsColorControl.Designer.cs KpsHandler.cs NoKeyHandler.cs Program.cs RoundedRectangle.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs "obj\Release\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+        CompilerServer: server - server processed compilation - 48e152b9-ff7b-4b5a-bc49-750167487069
     Target CopyFilesToOutputDirectory:
+        Copying file from "D:\projects\c#\osukps\osukps\obj\Release\osukps.exe" to "d:\Apps and Files\Apps\osukps\osukps.exe".
         osukps -> d:\Apps and Files\Apps\osukps\osukps.exe
+    Target IncrementalClean:
+        Deleting file "D:\projects\c#\osukps\osukps\obj\Release\osukps.csprojResolveAssemblyReference.cache".
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.67
+Time Elapsed 00:00:04.70

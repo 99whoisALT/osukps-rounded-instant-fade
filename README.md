@@ -1,3 +1,5 @@
+> This fork makes the buttons rounded, also supports transparent background :D
+
 ## osukps
 A little program that shows keystates, keys per second and total keys for rythm games (osu!, stepmania etc).
 
@@ -7,7 +9,7 @@ Extra buttons can be added or removed (minimum 1, maximum 10).
 Button/text/kps colors can be customized.
 
 ## Download
-See [Releases](https://github.com/yugecin/osukps/releases)
+See [Releases](https://github.com/AqilCont/osukps/releases)
 
 ## Usage
 Right click to access a menu that does stuff (add/remove buttons, exit).  
