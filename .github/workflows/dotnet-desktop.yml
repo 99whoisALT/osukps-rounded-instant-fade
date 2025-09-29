@@ -133,6 +133,6 @@ jobs:
       with:
         tag_name: auto-${{ github.run_number }}
         name: "Auto Release ${{ github.run_number }}"
-        files: osukps\bin\Release\*.exe
+        files: osukps\bin\Release\*
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
