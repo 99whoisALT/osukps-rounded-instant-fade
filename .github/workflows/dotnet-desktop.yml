@@ -127,12 +127,17 @@ jobs:
       with:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
-        
+
+
+    - name: Zip build output
+      run: |
+        Compress-Archive -Path osukps\bin\* -DestinationPath osukps\bin.zip
+
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
         tag_name: auto-${{ github.run_number }}
         name: "Auto Release ${{ github.run_number }}"
-        files: osukps\bin\Release\*
+        files: osukps\bin.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
