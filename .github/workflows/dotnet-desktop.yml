@@ -77,6 +77,19 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v2
 
+    - name: Install .NET Framework 4.0 reference assemblies
+      run: |
+        nuget install Microsoft.NETFramework.ReferenceAssemblies.net40 -Version 1.0.3 -OutputDirectory $env:RUNNER_TEMP\net40pkg
+        $pkgDir = Get-ChildItem "$env:RUNNER_TEMP\net40pkg" -Directory | Select-Object -First 1
+        $refSource = Join-Path $pkgDir.FullName "build\.NETFramework\v4.0"
+        $refTarget = "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0"
+        if (-Not (Test-Path $refTarget)) {
+          New-Item -ItemType Directory -Path $refTarget | Out-Null
+        }
+        Copy-Item "$refSource\*" $refTarget -Recurse -Force
+
+    # what did chatgpt just give me?
+
     # Execute all unit tests in the solution
     - name: Execute unit tests
       run: dotnet test --no-restore
