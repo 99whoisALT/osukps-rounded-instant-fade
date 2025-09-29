@@ -121,11 +121,15 @@ jobs:
     - name: Remove the pfx
       run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
 
+    - name: Zip build output
+      run: |
+        Compress-Archive -Path "*" -DestinationPath all.zip
+
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
         tag_name: auto-${{ github.run_number }}
         name: "Auto Release ${{ github.run_number }}"
-        files: osukps\obj\Release\*.exe
+        files: all.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
