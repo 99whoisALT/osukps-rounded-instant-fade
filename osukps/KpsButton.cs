@@ -113,7 +113,8 @@ namespace osukps {
 				colortimer = 255;
 				result = 1;
 			} else {
-				colortimer = Math.Max(colortimer - 15, 0);
+				colortimer = 0; //Math.Max(colortimer - 15, 0);
+				// revolutionary! my only edit
 			}
 			UpdateColor();
 			return result;
