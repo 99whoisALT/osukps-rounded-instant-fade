@@ -80,9 +80,7 @@ namespace osukps {
 			}
 			lblKps.ForeColor = prevcol;
 
-			if (kps == 0) {
-				lblKps.Text = string.Format("{0} Max", max);
-			} else lblKps.Text = string.Format("{0} Kps", kps);
+			lblKps.Text = string.Format("{0}/{1} KPS", kps, max);
 
 			lblTotal.Text = total.ToString();
 		}
