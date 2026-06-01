@@ -383,7 +383,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.TransparencyKey = this.BackColor = System.Drawing.Color.Black;
+			this.BackColor = System.Drawing.Color.Black;
+			this.TransparencyKey = System.Drawing.Color.Magenta;
 			this.ClientSize = new System.Drawing.Size(139, 36);
 			this.ContextMenuStrip = this.cms;
 			this.Controls.Add(this.pnlInfo);
