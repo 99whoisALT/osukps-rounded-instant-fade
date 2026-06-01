@@ -88,7 +88,7 @@ jobs:
         }
         Copy-Item "$refSource\*" $refTarget -Recurse -Force
 
-    # what did chatgpt just give me?
+    # what did you just give me
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
@@ -120,6 +120,9 @@ jobs:
     # Remove the pfx
     - name: Remove the pfx
       run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+
+    - name: Find executables
+      run: "Get-ChildItem -Recurse *.exe"
 
     - name: Zip build output
       run: |
