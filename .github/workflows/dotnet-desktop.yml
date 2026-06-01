@@ -126,13 +126,13 @@ jobs:
 
     - name: Zip build output
       run: |
-        Compress-Archive -Path "*" -DestinationPath all.zip
+        Compress-Archive -Path "osukps\obj\Release\*" -DestinationPath release.zip
 
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
         tag_name: auto-${{ github.run_number }}
-        name: "Auto Release ${{ github.run_number }}"
-        files: all.zip
+        name: "Auto Release #${{ github.run_number }}"
+        files: release.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
