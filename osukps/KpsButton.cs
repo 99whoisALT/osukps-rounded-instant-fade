@@ -78,6 +78,7 @@ namespace osukps {
 		}
 
 		private void KpsButton_Paint(object sender, PaintEventArgs e) {
+			currentcol = Color.Red;
 			System.Drawing.Drawing2D.GraphicsPath p = RoundedRectangle.Create(0, 0, 34, 34, 10, RoundedRectangle.RectangleCorners.All);
 			e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			e.Graphics.FillPath(new SolidBrush(currentcol), p);
