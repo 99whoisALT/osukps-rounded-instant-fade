@@ -121,7 +121,7 @@ namespace osukps {
 		}
 
 		public void UpdateColor() {
-			float f = colortimer / 255f;
+			float f = (float) Math.Ceiling(colortimer / 255f);
 			int r = color.inactive.R + (int) (f * (color.active.R - color.inactive.R));
 			int g = color.inactive.G + (int) (f * (color.active.G - color.inactive.G));
 			int b = color.inactive.B + (int) (f * (color.active.B - color.inactive.B));
